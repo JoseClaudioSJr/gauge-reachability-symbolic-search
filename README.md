@@ -1,6 +1,6 @@
 # Hypergeometric Sums Lab (WZ / Zeilberger-style)
 
-Objetivo: transformar conjecturas numericas em identidades com certificado por recorrencia.
+Goal: turn numerical conjectures into identities with recurrence-based certificates.
 
 ## Setup
 
@@ -10,64 +10,64 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Familias disponiveis
+## Available Families
 
 - `binom-sum`: \(\sum_{k=0}^{n} \binom{n}{k} = 2^n\)
 - `binom-square`: \(\sum_{k=0}^{n} \binom{n}{k}^2 = \binom{2n}{n}\)
 - `weighted-binom`: \(\sum_{k=0}^{n} k\binom{n}{k} = n2^{n-1}\)
-- `franel-cube`: \(\sum_{k=0}^{n} \binom{n}{k}^3\) (Franel, recorrencia de ordem 2)
+- `franel-cube`: \(\sum_{k=0}^{n} \binom{n}{k}^3\) (Franel, order-2 recurrence)
 
-## 1) Certificado WZ para uma familia
+## 1) WZ Certificate for One Family
 
-Executar:
+Run:
 
 ```bash
 python3 src/wz_lab.py prove-family --family binom-square
 ```
 
-O script:
+The script:
 
-- busca automaticamente um certificado racional `R(n,k)` em um espaco de ansatz,
-- verifica simbolicamente o residual da equacao WZ.
+- automatically searches for a rational certificate `R(n,k)` in an ansatz space,
+- symbolically verifies the residual of the WZ equation.
 
-Para `franel-cube`, o buscador de certificado atual (modo normalizado de primeira ordem) retorna `n/a`.
-Agora o `prove-family` tenta automaticamente um modo de telescoping de ordem maior usando a recorrencia conhecida da familia.
+For `franel-cube`, the current certificate searcher (first-order normalized mode) returns `n/a`.
+Now `prove-family` automatically tries a higher-order telescoping mode using the family's known recurrence.
 
-## 2) Conjectura -> recorrencia
+## 2) Conjecture -> Recurrence
 
-Executar:
+Run:
 
 ```bash
 python3 src/wz_lab.py guess-family --family franel-cube --n-start 0 --n-end 30 --order -1 --degree 2
 ```
 
-Esse comando:
+This command:
 
-- gera termos exatos da soma,
-- tenta adivinhar recorrencia linear com coeficientes polinomiais,
-- valida em termos exatos adicionais.
+- generates exact terms of the sum,
+- attempts to guess a linear recurrence with polynomial coefficients,
+- validates on additional exact terms.
 
-Obs: `--order -1` usa a ordem recomendada da familia.
+Note: `--order -1` uses the family-recommended order.
 
-## 3) Relatorio automatico (3 familias)
+## 3) Automatic Report (3 Families)
 
-Executar:
+Run:
 
 ```bash
 python3 src/wz_lab.py report --n-end 30 --degree 2 --max-degree 4
 ```
 
-Saida:
+Output:
 
-- status da recorrencia conjecturada,
-- ordem de recorrencia usada por familia,
-- status do certificado WZ encontrado,
-- verificacao simbolica do residual.
+- status of the conjectured recurrence,
+- recurrence order used per family,
+- status of the found WZ certificate,
+- symbolic verification of the residual.
 
-## Observacao
+## Notes
 
-- O comando `prove-family` gera um certificado simbolico no estilo WZ para a familia escolhida.
-- O comando `guess-family` e util para descoberta de recorrencias candidatas (pipeline de conjectura).
-- O comando `report` automatiza o ciclo em todas as familias internas.
-- Use `--no-auto-order` no `report` para forcar uma ordem unica em todas as familias.
-- Para familias com recorrencia de ordem > 1 (ex.: `franel-cube`), o sistema tenta certificado de telescoping de ordem maior via ansatz racional.
+- The `prove-family` command generates a symbolic WZ-style certificate for the selected family.
+- The `guess-family` command is useful for discovering candidate recurrences (conjecture pipeline).
+- The `report` command automates the cycle across all internal families.
+- Use `--no-auto-order` in `report` to force a single order for all families.
+- For families with recurrence order > 1 (e.g., `franel-cube`), the system attempts a higher-order telescoping certificate via rational ansatz.
