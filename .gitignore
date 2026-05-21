@@ -11,3 +11,9 @@ __pycache__/
 
 # Build folders
 arxiv_submission/
+
+# Local exploratory folders not for remote
+beale_exploration/
+collatz_exploration/
+paper_draft.md
+paper_draft.pdf
