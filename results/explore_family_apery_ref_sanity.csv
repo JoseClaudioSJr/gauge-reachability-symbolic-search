@@ -1,0 +1,2 @@
+template,r,m,recurrence_found,recurrence_order,recurrence_degree,recurrence_sparsity,tail_growth_ratio,symmetric,oeis,reference_name,reference_terms_match,reference_recurrence_match,baseline_candidates,guided_candidates,candidate_reduction_pct,baseline_systems,guided_systems,baseline_equations,guided_equations,baseline_time_s,guided_time_s,time_reduction_pct,baseline_found,guided_found,baseline_verified,guided_verified,guided_poles,predicted_poles
+apery-like,1,0,True,2,2,1.0,10.364461795251582,False,,,,,71,8,88.73239436619718,,,,,,,,,,,,,-k + n + 1|-k + n + 2

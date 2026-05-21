@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "template": "binomial-power",
+    "r": 1,
+    "m": 0,
+    "max_cert_degree": 4,
+    "benchmark_repeats": 3,
+    "sympy_version": "1.14.0"
+  },
+  "rows": [
+    {
+      "template": "binomial-power",
+      "r": 1,
+      "m": 0,
+      "gauge": "raw",
+      "gauge_description": "F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",
+      "denom_mode": "guided",
+      "cert_found": false,
+      "cert_verified": false,
+      "systems": 24,
+      "equations": 478,
+      "median_time_s": 1.425953625002876,
+      "r_expr": null
+    },
+    {
+      "template": "binomial-power",
+      "r": 1,
+      "m": 0,
+      "gauge": "closed_form",
+      "gauge_description": "G(n+1,k)/G(n,k) - 1  [G = F/2^n, closed-form gauge]",
+      "denom_mode": "guided",
+      "cert_found": true,
+      "cert_verified": true,
+      "systems": 1,
+      "equations": 10,
+      "median_time_s": 0.02947074999974575,
+      "r_expr": "k/(2*(k - n - 1))"
+    },
+    {
+      "template": "binomial-power",
+      "r": 1,
+      "m": 0,
+      "gauge": "recurrence_lhs",
+      "gauge_description": "sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",
+      "denom_mode": "guided",
+      "cert_found": true,
+      "cert_verified": true,
+      "systems": 1,
+      "equations": 10,
+      "median_time_s": 0.02916029200423509,
+      "r_expr": "-k/(2*(k - n - 1))"
+    },
+    {
+      "template": "binomial-power",
+      "r": 1,
+      "m": 0,
+      "gauge": "raw",
+      "gauge_description": "F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",
+      "denom_mode": "baseline",
+      "cert_found": false,
+      "cert_verified": false,
+      "systems": 92,
+      "equations": 2256,
+      "median_time_s": 7.869063833997643,
+      "r_expr": null
+    },
+    {
+      "template": "binomial-power",
+      "r": 1,
+      "m": 0,
+      "gauge": "closed_form",
+      "gauge_description": "G(n+1,k)/G(n,k) - 1  [G = F/2^n, closed-form gauge]",
+      "denom_mode": "baseline",
+      "cert_found": true,
+      "cert_verified": true,
+      "systems": 3,
+      "equations": 30,
+      "median_time_s": 0.06443716599460458,
+      "r_expr": "k/(2*(k - n - 1))"
+    },
+    {
+      "template": "binomial-power",
+      "r": 1,
+      "m": 0,
+      "gauge": "recurrence_lhs",
+      "gauge_description": "sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",
+      "denom_mode": "baseline",
+      "cert_found": true,
+      "cert_verified": true,
+      "systems": 3,
+      "equations": 30,
+      "median_time_s": 0.06754504200216616,
+      "r_expr": "-k/(2*(k - n - 1))"
+    }
+  ]
+}

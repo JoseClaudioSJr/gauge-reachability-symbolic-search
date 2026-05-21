@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "command": "python src/wz_lab.py explore-family --r-min 1 --r-max 4 --n-terms 24 --max-order 5 --max-rec-degree 3 --max-cert-degree 1",
+    "sympy_version": "1.14.0",
+    "r_range": [
+      1,
+      4
+    ],
+    "n_terms": 24,
+    "max_order": 5,
+    "max_rec_degree": 3,
+    "max_cert_degree": 1,
+    "benchmark_repeats": 2
+  },
+  "rows": [
+    {
+      "r": 1,
+      "m": 0,
+      "recurrence_found": true,
+      "rec_order": 1,
+      "rec_degree": 0,
+      "rec_sparsity": 1.0,
+      "tail_growth_ratio": 2.0,
+      "symmetric": true,
+      "oeis": "A000079",
+      "reference_name": "powers of 2",
+      "reference_terms_match": true,
+      "reference_recurrence_match": true,
+      "baseline_candidates": 13,
+      "guided_candidates": 2,
+      "candidate_reduction_pct": 84.61538461538461,
+      "baseline_systems": 3,
+      "guided_systems": 1,
+      "baseline_equations": 30,
+      "guided_equations": 10,
+      "baseline_time_s": 0.05687677100104338,
+      "guided_time_s": 0.021408354497907567,
+      "time_reduction_pct": 62.360109195518774,
+      "baseline_found": true,
+      "guided_found": true,
+      "predicted_poles": [
+        "-k + n + 1"
+      ],
+      "guided_poles": [
+        "k - n - 1"
+      ]
+    },
+    {
+      "r": 2,
+      "m": 0,
+      "recurrence_found": true,
+      "rec_order": 1,
+      "rec_degree": 1,
+      "rec_sparsity": 1.0,
+      "tail_growth_ratio": 3.9130434782608696,
+      "symmetric": true,
+      "oeis": "A000984",
+      "reference_name": "central binomial coefficients",
+      "reference_terms_match": true,
+      "reference_recurrence_match": false,
+      "baseline_candidates": 16,
+      "guided_candidates": 2,
+      "candidate_reduction_pct": 87.5,
+      "baseline_systems": 16,
+      "guided_systems": 2,
+      "baseline_equations": 489,
+      "guided_equations": 47,
+      "baseline_time_s": 1.5851203540005372,
+      "guided_time_s": 0.13898827050070395,
+      "time_reduction_pct": 91.23168974835731,
+      "baseline_found": false,
+      "guided_found": false,
+      "predicted_poles": [
+        "-k + n + 1"
+      ],
+      "guided_poles": []
+    },
+    {
+      "r": 3,
+      "m": 0,
+      "recurrence_found": true,
+      "rec_order": 2,
+      "rec_degree": 2,
+      "rec_sparsity": 1.0,
+      "tail_growth_ratio": 7.657240297661829,
+      "symmetric": true,
+      "oeis": "A000172",
+      "reference_name": "Franel numbers (r=3)",
+      "reference_terms_match": true,
+      "reference_recurrence_match": false,
+      "baseline_candidates": 31,
+      "guided_candidates": 4,
+      "candidate_reduction_pct": 87.09677419354838,
+      "baseline_systems": 31,
+      "guided_systems": 4,
+      "baseline_equations": 2847,
+      "guided_equations": 391,
+      "baseline_time_s": 19.246977978998984,
+      "guided_time_s": 2.8321598960010306,
+      "time_reduction_pct": 85.28517100663132,
+      "baseline_found": false,
+      "guided_found": false,
+      "predicted_poles": [
+        "-k + n + 1",
+        "-k + n + 2"
+      ],
+      "guided_poles": []
+    },
+    {
+      "r": 4,
+      "m": 0,
+      "recurrence_found": true,
+      "rec_order": 2,
+      "rec_degree": 3,
+      "rec_sparsity": 1.0,
+      "tail_growth_ratio": 14.984671439142144,
+      "symmetric": true,
+      "oeis": "A005260",
+      "reference_name": "Franel numbers (r=4)",
+      "reference_terms_match": true,
+      "reference_recurrence_match": null,
+      "baseline_candidates": 35,
+      "guided_candidates": 4,
+      "candidate_reduction_pct": 88.57142857142857,
+      "baseline_systems": 35,
+      "guided_systems": 4,
+      "baseline_equations": 4948,
+      "guided_equations": 572,
+      "baseline_time_s": 53.00442418750026,
+      "guided_time_s": 6.288279291498839,
+      "time_reduction_pct": 88.13631241563083,
+      "baseline_found": false,
+      "guided_found": false,
+      "predicted_poles": [
+        "-k + n + 1",
+        "-k + n + 2"
+      ],
+      "guided_poles": []
+    }
+  ]
+}

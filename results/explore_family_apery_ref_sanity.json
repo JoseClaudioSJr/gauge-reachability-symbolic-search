@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "command": "python src/wz_lab.py explore-family --template apery-like --r-min 1 --r-max 1 --n-terms 16 --max-order 4 --max-rec-degree 2 --max-cert-degree 2",
+    "sympy_version": "1.14.0",
+    "r_range": [
+      1,
+      1
+    ],
+    "n_terms": 16,
+    "max_order": 4,
+    "max_rec_degree": 2,
+    "max_cert_degree": 2,
+    "benchmark_repeats": 3
+  },
+  "rows": [
+    {
+      "template": "apery-like",
+      "r": 1,
+      "m": 0,
+      "recurrence_found": true,
+      "rec_order": 2,
+      "rec_degree": 2,
+      "rec_sparsity": 1.0,
+      "tail_growth_ratio": 10.364461795251582,
+      "symmetric": false,
+      "oeis": "",
+      "reference_name": "",
+      "reference_terms_match": null,
+      "reference_recurrence_match": null,
+      "baseline_candidates": 71,
+      "guided_candidates": 8,
+      "candidate_reduction_pct": 88.73239436619718,
+      "baseline_systems": null,
+      "guided_systems": null,
+      "baseline_equations": null,
+      "guided_equations": null,
+      "baseline_time_s": null,
+      "guided_time_s": null,
+      "time_reduction_pct": null,
+      "baseline_found": null,
+      "guided_found": null,
+      "baseline_verified": null,
+      "guided_verified": null,
+      "predicted_poles": [
+        "-k + n + 1",
+        "-k + n + 2"
+      ],
+      "guided_poles": []
+    }
+  ]
+}

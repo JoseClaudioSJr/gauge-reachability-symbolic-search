@@ -1,0 +1,5 @@
+template,r,m,gauge,gauge_description,denom_mode,reachable,cert_found,cert_verified,min_degree_found,systems,equations,median_time_s,r_expr
+weighted-binom,1,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",guided,False,False,False,,8,178,0.5556358329995419,
+weighted-binom,1,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",guided,False,False,False,,8,157,0.6267184159951285,
+weighted-binom,1,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",baseline,False,False,False,,52,1449,5.000645457999781,
+weighted-binom,1,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",baseline,False,False,False,,52,1449,6.501693375001196,

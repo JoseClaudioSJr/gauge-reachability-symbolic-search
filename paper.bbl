@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chyzak(2000)]{chyzak2000}
+Fr\'ed\'eric Chyzak.
+\newblock An extension of zeilberger's fast algorithm to general holonomic functions.
+\newblock \emph{Discrete Mathematics}, 217\penalty0 (1--3):\penalty0 115--134, 2000.
+\newblock \doi{10.1016/S0012-365X(99)00259-9}.
+\newblock URL \url{https://doi.org/10.1016/S0012-365X(99)00259-9}.
+
+\bibitem[Geddes et~al.(1992)Geddes, Czapor, and Labahn]{geddes1992}
+Keith~O. Geddes, Stephen~R. Czapor, and George Labahn.
+\newblock \emph{Algorithms for Computer Algebra}.
+\newblock Kluwer Academic Publishers, 1992.
+\newblock URL \url{https://dl.acm.org/doi/book/10.5555/136136}.
+
+\bibitem[Kauers and Paule(2011)]{kauers2011}
+Manuel Kauers and Peter Paule.
+\newblock \emph{The Concrete Tetrahedron}.
+\newblock Springer, 2011.
+\newblock \doi{10.1007/978-3-7091-0445-3}.
+\newblock URL \url{https://doi.org/10.1007/978-3-7091-0445-3}.
+
+\bibitem[Koepf(2014)]{koepf2014}
+Wolfram Koepf.
+\newblock \emph{Hypergeometric Summation: An Algorithmic Approach to Summation and Special Function Identities}.
+\newblock Springer, 2nd edition, 2014.
+\newblock \doi{10.1007/978-1-4471-6469-8}.
+\newblock URL \url{https://doi.org/10.1007/978-1-4471-6469-8}.
+
+\bibitem[Lipshitz(1989)]{lipshitz1989}
+Leonard Lipshitz.
+\newblock D-finite power series.
+\newblock \emph{Journal of Algebra}, 122\penalty0 (2):\penalty0 353--373, 1989.
+\newblock \doi{10.1016/0021-8693(89)90222-6}.
+\newblock URL \url{https://doi.org/10.1016/0021-8693(89)90222-6}.
+
+\bibitem[Petkovsek et~al.(1996)Petkovsek, Wilf, and Zeilberger]{petkovsek1996}
+Marko Petkovsek, Herbert~S. Wilf, and Doron Zeilberger.
+\newblock \emph{A=B}.
+\newblock A K Peters, 1996.
+\newblock URL \url{https://www.math.upenn.edu/~wilf/AeqB.html}.
+
+\bibitem[Schneider(2007)]{schneider2007}
+Carsten Schneider.
+\newblock Symbolic summation assists combinatorics.
+\newblock \emph{S\'eminaire Lotharingien de Combinatoire}, 56:\penalty0 1--36, 2007.
+\newblock URL \url{https://www.mat.univie.ac.at/~slc/wpapers/s56schneider.pdf}.
+
+\bibitem[Stanley(1980)]{stanley1980}
+Richard~P. Stanley.
+\newblock Differentiably finite power series.
+\newblock \emph{European Journal of Combinatorics}, 1\penalty0 (2):\penalty0 175--188, 1980.
+\newblock \doi{10.1016/S0195-6698(80)80051-5}.
+\newblock URL \url{https://doi.org/10.1016/S0195-6698(80)80051-5}.
+
+\bibitem[Wilf and Zeilberger(1992)]{wilf1992}
+Herbert~S. Wilf and Doron Zeilberger.
+\newblock An algorithmic proof theory for hypergeometric (ordinary and q) multisum/integral identities.
+\newblock \emph{Inventiones Mathematicae}, 108\penalty0 (3):\penalty0 575--633, 1992.
+\newblock \doi{10.1007/BF02100618}.
+\newblock URL \url{https://doi.org/10.1007/BF02100618}.
+
+\bibitem[Zeilberger(1990)]{zeilberger1990}
+Doron Zeilberger.
+\newblock A fast algorithm for proving terminating hypergeometric identities.
+\newblock \emph{Discrete Mathematics}, 80\penalty0 (2):\penalty0 207--211, 1990.
+\newblock \doi{10.1016/0012-365X(90)90120-7}.
+\newblock URL \url{https://doi.org/10.1016/0012-365X(90)90120-7}.
+
+\end{thebibliography}

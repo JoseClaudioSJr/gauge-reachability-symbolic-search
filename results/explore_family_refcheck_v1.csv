@@ -1,0 +1,4 @@
+r,m,recurrence_found,recurrence_order,recurrence_degree,recurrence_sparsity,tail_growth_ratio,symmetric,oeis,reference_name,reference_terms_match,reference_recurrence_match,baseline_candidates,guided_candidates,candidate_reduction_pct,baseline_systems,guided_systems,baseline_equations,guided_equations,baseline_time_s,guided_time_s,time_reduction_pct,baseline_found,guided_found,guided_poles,predicted_poles
+1,0,True,1,0,1.0,2.0,True,A000079,powers of 2,True,True,13,2,84.61538461538461,,,,,,,,,,,-k + n + 1
+2,0,True,1,1,1.0,3.9130434782608696,True,A000984,central binomial coefficients,True,True,16,2,87.5,,,,,,,,,,,-k + n + 1
+3,0,True,2,2,1.0,7.657240297661829,True,A000172,Franel numbers (r=3),True,True,31,4,87.09677419354838,,,,,,,,,,,-k + n + 1|-k + n + 2

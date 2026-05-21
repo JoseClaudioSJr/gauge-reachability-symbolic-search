@@ -1,0 +1,7 @@
+template,r,m,gauge,gauge_description,denom_mode,reachable,cert_found,cert_verified,min_degree_found,systems,equations,median_time_s,r_expr
+weighted-binom,1,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",guided,False,False,False,,24,533,1.530527083996276,
+weighted-binom,1,0,closed_form,"G(n+1,k)/G(n,k) - 1  [G = k*C(n,k)/(n*2^(n-1)), closed-form gauge]",guided,True,True,True,1,1,10,0.03286870799638564,(k - 1)/(2*(k - n - 1))
+weighted-binom,1,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",guided,False,False,False,,24,517,1.9226851249986794,
+weighted-binom,1,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",baseline,False,False,False,,52,1449,4.9237621249994845,
+weighted-binom,1,0,closed_form,"G(n+1,k)/G(n,k) - 1  [G = k*C(n,k)/(n*2^(n-1)), closed-form gauge]",baseline,True,True,True,1,3,32,0.07344274999923073,(k - 1)/(2*(k - n - 1))
+weighted-binom,1,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",baseline,False,False,False,,52,1449,6.445266957998683,

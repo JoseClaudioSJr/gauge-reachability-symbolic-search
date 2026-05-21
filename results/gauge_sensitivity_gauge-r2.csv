@@ -1,0 +1,7 @@
+template,r,m,gauge,gauge_description,denom_mode,cert_found,cert_verified,systems,equations,median_time_s,r_expr
+binomial-power,2,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",guided,False,False,24,804,2.642515250001452,
+binomial-power,2,0,closed_form,"G(n+1,k)/G(n,k) - 1  [G = F/C(2n,n), closed-form gauge]",guided,True,True,16,586,1.6325818750046892,k**2*(2*k - 3*n - 3)/(2*(2*n + 1)*(k - n - 1)**2)
+binomial-power,2,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",guided,False,False,24,815,3.6749891670042416,
+binomial-power,2,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",baseline,False,False,108,4025,14.758579624998674,
+binomial-power,2,0,closed_form,"G(n+1,k)/G(n,k) - 1  [G = F/C(2n,n), closed-form gauge]",baseline,True,True,77,3157,8.943345708001289,k**2*(2*k - 3*n - 3)/(2*(2*n + 1)*(k - n - 1)**2)
+binomial-power,2,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",baseline,False,False,108,4073,20.664287916995818,

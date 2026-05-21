@@ -1,0 +1,7 @@
+template,r,m,gauge,gauge_description,denom_mode,reachable,cert_found,cert_verified,min_degree_found,systems,equations,median_time_s,r_expr
+binomial-power,1,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",guided,False,False,False,,24,478,1.4898302090005018,
+binomial-power,1,0,closed_form,"G(n+1,k)/G(n,k) - 1  [G = F/2^n, closed-form gauge]",guided,True,True,True,1,1,10,0.030113250002614222,k/(2*(k - n - 1))
+binomial-power,1,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",guided,True,True,True,1,1,10,0.029854250002244953,-k/(2*(k - n - 1))
+binomial-power,1,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",baseline,False,False,False,,92,2256,7.941571541996382,
+binomial-power,1,0,closed_form,"G(n+1,k)/G(n,k) - 1  [G = F/2^n, closed-form gauge]",baseline,True,True,True,1,3,30,0.06729512499441626,k/(2*(k - n - 1))
+binomial-power,1,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",baseline,True,True,True,1,3,30,0.06862741599616129,-k/(2*(k - n - 1))

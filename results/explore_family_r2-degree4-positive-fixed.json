@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "command": "python src/wz_lab.py explore-family --template binomial-power --r-min 2 --r-max 2 --n-terms 30 --max-order 3 --max-rec-degree 2 --max-cert-degree 4",
+    "sympy_version": "1.14.0",
+    "r_range": [
+      2,
+      2
+    ],
+    "n_terms": 30,
+    "max_order": 3,
+    "max_rec_degree": 2,
+    "max_cert_degree": 4,
+    "benchmark_repeats": 3
+  },
+  "rows": [
+    {
+      "template": "binomial-power",
+      "r": 2,
+      "m": 0,
+      "recurrence_found": true,
+      "rec_order": 1,
+      "rec_degree": 1,
+      "rec_sparsity": 1.0,
+      "tail_growth_ratio": 3.9310344827586206,
+      "symmetric": true,
+      "oeis": "A000984",
+      "reference_name": "central binomial coefficients",
+      "reference_terms_match": true,
+      "reference_recurrence_match": true,
+      "baseline_candidates": 16,
+      "guided_candidates": 6,
+      "candidate_reduction_pct": 62.5,
+      "baseline_systems": 64,
+      "guided_systems": 24,
+      "baseline_equations": 2447,
+      "guided_equations": 815,
+      "baseline_time_s": 12.143312958000024,
+      "guided_time_s": 3.6712016250021406,
+      "time_reduction_pct": 69.76770970410055,
+      "baseline_found": false,
+      "guided_found": false,
+      "baseline_verified": false,
+      "guided_verified": false,
+      "predicted_poles": [
+        "-k + n + 1"
+      ],
+      "guided_poles": []
+    }
+  ]
+}

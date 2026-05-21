@@ -1,0 +1,89 @@
+{
+  "z": 5,
+  "a_max": 200,
+  "b_max": 200,
+  "c_max": 200,
+  "xy_range": [
+    3,
+    5
+  ],
+  "representations": {
+    "direct": {
+      "name": "direct",
+      "solutions_found": 9,
+      "coprime_solutions": 0,
+      "near_misses": 2778,
+      "beale_violation": 0,
+      "patterns": "none - exhaustive enumeration"
+    },
+    "modular": {
+      "name": "modular",
+      "primes_checked": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "forbidden_classes": {
+        "2": 4,
+        "3": 12,
+        "5": 46,
+        "7": 142,
+        "11": 728,
+        "13": 1218
+      },
+      "allowed_classes": {
+        "2": 4,
+        "3": 15,
+        "5": 79,
+        "7": 201,
+        "11": 603,
+        "13": 979
+      },
+      "modular_violations_in_near_misses": {},
+      "obstructions": "residue classes that cannot satisfy equation"
+    },
+    "gcd": {
+      "name": "gcd",
+      "near_misses": 12142,
+      "gcd_distribution": {
+        "2": 1691,
+        "1": 9215,
+        "3": 553,
+        "4": 231,
+        "5": 146,
+        "6": 89,
+        "7": 59,
+        "8": 41,
+        "9": 32,
+        "10": 22,
+        "11": 9,
+        "12": 8,
+        "13": 6,
+        "14": 6,
+        "15": 6,
+        "16": 8,
+        "17": 4,
+        "18": 4,
+        "19": 4,
+        "20": 4,
+        "21": 4
+      },
+      "coprime_near_misses": 9215,
+      "nontrivial_gcd_near_misses": 2927,
+      "coprime_mean_error": 1456.2209441128596,
+      "nontrivial_mean_error": 1974.217287324906,
+      "beale_evidence": "if coprime errors >> nontrivial, supports Beale"
+    },
+    "algebraic": {
+      "name": "algebraic",
+      "curves_analyzed": 9,
+      "high_genus_curves": 8,
+      "rational_points_found": 6,
+      "faltings_prediction": "high genus \u27f9 finitely many rational points",
+      "obstructions": "geometric obstruction to rational solutions"
+    }
+  }
+}

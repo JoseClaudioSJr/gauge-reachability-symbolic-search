@@ -1,0 +1,7 @@
+template,r,m,gauge,gauge_description,denom_mode,reachable,cert_found,cert_verified,min_degree_found,systems,equations,median_time_s,r_expr
+binomial-power,2,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",guided,False,False,False,,24,804,2.65060091700434,
+binomial-power,2,0,closed_form,"G(n+1,k)/G(n,k) - 1  [G = F/C(2n,n), closed-form gauge]",guided,True,True,True,3,16,586,1.594149832999392,k**2*(2*k - 3*n - 3)/(2*(2*n + 1)*(k - n - 1)**2)
+binomial-power,2,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",guided,False,False,False,,24,815,3.6467882090000785,
+binomial-power,2,0,raw,"F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",baseline,False,False,False,,108,4025,14.697356707998551,
+binomial-power,2,0,closed_form,"G(n+1,k)/G(n,k) - 1  [G = F/C(2n,n), closed-form gauge]",baseline,True,True,True,3,77,3157,8.808644875003665,k**2*(2*k - 3*n - 3)/(2*(2*n + 1)*(k - n - 1)**2)
+binomial-power,2,0,recurrence_lhs,"sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",baseline,False,False,False,,108,4073,20.36763466699631,

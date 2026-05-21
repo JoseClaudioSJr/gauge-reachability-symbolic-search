@@ -1,0 +1,8 @@
+flowchart TB
+    I[Identity: sum_k k*C(n,k) = n*2^(n-1)]
+    I --> R[raw gauge\nF(n,k) = k*C(n,k)]
+    I --> C[closed-form gauge\nG(n,k) = k*C(n,k) / (n*2^(n-1))]
+    R --> RS[shift ratio complex\nhigh-degree denominator]
+    C --> CS[shift ratio simplifies\nlow-degree denominator]
+    RS --> U[UNREACHABLE\n533 equations\nno certificate]
+    CS --> A[REACHABLE\n10 equations\ndeg-1 certificate\nR = (k-1)/(2(k-n-1))]

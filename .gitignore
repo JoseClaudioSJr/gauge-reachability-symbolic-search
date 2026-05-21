@@ -1,0 +1,13 @@
+.venv/
+.venv-1/
+__pycache__/
+*.pyc
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.blg
+
+# Build folders
+arxiv_submission/

@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "command": "python src/wz_lab.py explore-family --template binomial-power --r-min 4 --r-max 4 --n-terms 40 --max-order 4 --max-rec-degree 3 --max-cert-degree 4",
+    "sympy_version": "1.14.0",
+    "r_range": [
+      4,
+      4
+    ],
+    "n_terms": 40,
+    "max_order": 4,
+    "max_rec_degree": 3,
+    "max_cert_degree": 4,
+    "benchmark_repeats": 1
+  },
+  "rows": [
+    {
+      "template": "binomial-power",
+      "r": 4,
+      "m": 0,
+      "certificate_normalization": "none",
+      "certificate_equation": "recurrence_telescoping",
+      "lhs_mode": "recurrence_lhs",
+      "recurrence_found": true,
+      "rec_order": 2,
+      "rec_degree": 3,
+      "rec_sparsity": 1.0,
+      "tail_growth_ratio": 15.39443515787481,
+      "symmetric": true,
+      "oeis": "A005260",
+      "reference_name": "Franel numbers (r=4)",
+      "reference_terms_match": true,
+      "reference_recurrence_match": null,
+      "baseline_candidates": 51,
+      "guided_candidates": 9,
+      "candidate_reduction_pct": 82.35294117647058,
+      "baseline_systems": 204,
+      "guided_systems": 36,
+      "baseline_equations": 30703,
+      "guided_equations": 5547,
+      "baseline_time_s": 439.05274679200375,
+      "guided_time_s": 80.78001458299696,
+      "time_reduction_pct": 81.6012961601478,
+      "baseline_found": false,
+      "guided_found": false,
+      "baseline_verified": false,
+      "guided_verified": false,
+      "predicted_poles": [
+        "-k + n + 1",
+        "-k + n + 2"
+      ],
+      "guided_poles": []
+    }
+  ]
+}

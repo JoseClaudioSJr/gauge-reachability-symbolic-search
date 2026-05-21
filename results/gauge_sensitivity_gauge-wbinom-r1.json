@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "template": "weighted-binom",
+    "r": 1,
+    "m": 0,
+    "max_cert_degree": 4,
+    "benchmark_repeats": 3,
+    "sympy_version": "1.14.0"
+  },
+  "rows": [
+    {
+      "template": "weighted-binom",
+      "r": 1,
+      "m": 0,
+      "gauge": "raw",
+      "gauge_description": "F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",
+      "denom_mode": "guided",
+      "reachable": false,
+      "cert_found": false,
+      "cert_verified": false,
+      "min_degree_found": null,
+      "systems": 8,
+      "equations": 178,
+      "median_time_s": 0.5556358329995419,
+      "r_expr": null
+    },
+    {
+      "template": "weighted-binom",
+      "r": 1,
+      "m": 0,
+      "gauge": "recurrence_lhs",
+      "gauge_description": "sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",
+      "denom_mode": "guided",
+      "reachable": false,
+      "cert_found": false,
+      "cert_verified": false,
+      "min_degree_found": null,
+      "systems": 8,
+      "equations": 157,
+      "median_time_s": 0.6267184159951285,
+      "r_expr": null
+    },
+    {
+      "template": "weighted-binom",
+      "r": 1,
+      "m": 0,
+      "gauge": "raw",
+      "gauge_description": "F(n+1,k)/F(n,k) - 1  [raw summand, no normalization]",
+      "denom_mode": "baseline",
+      "reachable": false,
+      "cert_found": false,
+      "cert_verified": false,
+      "min_degree_found": null,
+      "systems": 52,
+      "equations": 1449,
+      "median_time_s": 5.000645457999781,
+      "r_expr": null
+    },
+    {
+      "template": "weighted-binom",
+      "r": 1,
+      "m": 0,
+      "gauge": "recurrence_lhs",
+      "gauge_description": "sum_j p_j(n)*F(n+j,k)/F(n,k)  [order-1 recurrence telescoping]",
+      "denom_mode": "baseline",
+      "reachable": false,
+      "cert_found": false,
+      "cert_verified": false,
+      "min_degree_found": null,
+      "systems": 52,
+      "equations": 1449,
+      "median_time_s": 6.501693375001196,
+      "r_expr": null
+    }
+  ]
+}

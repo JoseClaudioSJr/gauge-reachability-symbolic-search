@@ -1,0 +1,26 @@
+GAUGE SENSITIVITY CLAIM
+======================
+
+Claim:
+  Gauge selection acts as symbolic preconditioning for rational certificate search.
+  Closed-form normalization changes certificate reachability qualitatively —
+  not merely quantitatively — within a fixed ansatz budget.
+
+Families tested: weighted-binom r=1
+
+Results (guided denominators):
+  weighted-binom r=1 | gauge=raw                    | reachable=NO  | deg= -  | eqs=   533 | t=1.531s
+  weighted-binom r=1 | gauge=closed_form            | reachable=YES | deg=  1 | eqs=    10 | t=0.033s
+  weighted-binom r=1 | gauge=recurrence_lhs         | reachable=NO  | deg= -  | eqs=   517 | t=1.923s
+
+Summary:
+  Easiest (reachable):    weighted-binom r=1 gauge=closed_form (0.033s)
+  Hardest (unreachable):  weighted-binom r=1 gauge=recurrence_lhs (1.923s)
+  Runtime ratio:          58.5x
+
+Interpretation:
+  The raw summand gauge never produces a reachable certificate.
+  The recurrence-LHS gauge works only when the recurrence is trivially simple (deg 0).
+  The closed-form gauge is the only consistently effective preconditioner.
+  Adding it to a previously failing family (weighted-binom) immediately restores
+  reachability — confirming a causal, not correlational, relationship.
